@@ -6,5 +6,8 @@
                 (select)="onSelectUser1($event)"></app-user></li>
         }
     </ul>
+<app-task *ngIf="selectedname; else fallback" [selectedname]="selectedname" [id]="userId" />
+<ng-template #fallback>
+    <p id="fallback">Click on the Profile Button</p>
+</ng-template>
 </main>
-<app-task [selectedname]="selectedname" />

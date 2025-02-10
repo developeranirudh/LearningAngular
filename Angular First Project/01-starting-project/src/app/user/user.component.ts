@@ -25,6 +25,6 @@ get imagePath(){
 }
 
  onSelectUser(){
-  this.select.emit(this.name);
+  this.select.emit(this);
   }
 }
